@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test.com</title>
+  <style>
+    body {
+      color: #000; /* Changed color from #while to #000 for black text */
+      background-color: cyan;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    
+    h1 {
+      font-size: 500%;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    
+    h2 {
+      font-size: 200%;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    
+    .form-container {
+      margin-top: 20px;
+      text-align: left;
+      display: inline-block;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-container input[type="text"], 
+    .form-container input[type="email"], 
+    .form-container textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form-container select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form-container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div align="center">
+    <h1>Congratulations</h1>
+    <h1>30-July-2024</h1>
+    <h2>This application was deployed using AWS CodeDeploy.</h2>
+    <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
+  </div>
+  
+  <div class="form-container">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="accountType">Type of Account:</label>
+      <select id="accountType" name="accountType" required>
+        <option value="automation">Automation</option>
+        <option value="manual">Manual</option>
+      </select>
+      
+      <label for="note">Note:</label>
+      <textarea id="note" name="note" rows="4" placeholder="Enter your note here..."></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
